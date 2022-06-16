@@ -14,6 +14,7 @@ static vector<Alumno*> alumnos;
 
 int main()
 {
+    cout << "hola :D" << endl;
     string nombre = "Cesar";
     alumnos.push_back(new Alumno(nombre, 13, 0, 13));
     alumnos.push_back(new Alumno("Juan", 11, 5, 16));
