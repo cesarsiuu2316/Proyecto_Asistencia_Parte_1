@@ -30,6 +30,7 @@ int main()
     listar();
     for (int i = 0; i < alumnos.size(); i++)
         delete alumnos[i];
+    system("pause");
 }
 
 void listar() { 
