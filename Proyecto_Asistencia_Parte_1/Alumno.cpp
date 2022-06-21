@@ -14,13 +14,12 @@ Alumno::Alumno(string nombre, int usaMicro, int nousaMicro, int asistencia) {
 	this->asistencia = asistencia;
 }
 
-
 string Alumno::getnombre()
 {
 	return nombre;
 }
 
-int Alumno::getusaMicro()
+int Alumno::getusaMicro() const
 {
 	return usaMicro;
 }
@@ -72,4 +71,8 @@ void Alumno::aumentarConteos(int usaMicro) {
 
 void Alumno::calcularPorcentaje() {
 	this->porcentaje = ((double)usaMicro * 100.0) / (double)asistencia;
+}
+
+string Alumno::toString() {
+	return "Nombre: " + nombre + ", usaMicro: " + to_string(usaMicro) + ", noUsaMicro: " + to_string(nousaMicro) + ", asistencia: " + to_string(asistencia);
 }

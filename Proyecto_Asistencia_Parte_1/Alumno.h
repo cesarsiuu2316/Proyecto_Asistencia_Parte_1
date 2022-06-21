@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Alumno
@@ -10,7 +11,7 @@ public:
 	Alumno(string nombre, int usarMicro, int nousaMicro, int asistencia);
 	string getnombre();
 	void aumentarConteos(int usaMicro);
-	int getusaMicro();
+	int getusaMicro() const;
 	int getnousaMicro();
 	int getasistencia();
 	double getPorcentaje();
@@ -19,6 +20,7 @@ public:
 	void setnousaMicro(int noUsaMicro);
 	void setasistencia(int asistencia);
 	void calcularPorcentaje();
+	string toString();
 private:
 	double porcentaje;
 	string nombre;
